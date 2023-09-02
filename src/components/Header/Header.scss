@@ -1,0 +1,203 @@
+.header_container {
+    background-color: black;
+    padding-top: 43px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width:600px) {
+        padding-bottom: 50px;
+    }
+
+    .header_title {
+
+        color: white;
+
+        span:first-child {
+            color: #B6FBFF;
+        }
+    }
+
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+        &_caption {
+            margin-top: 150px;
+            color: white;
+            font-size: 64px;
+            font-weight: 700;
+
+            span:first-child {
+                color: #B6FBFF;
+
+            }
+
+            @media (max-width: 600px) {
+                font-size: 40px;
+                margin-top: 90px;
+            }
+
+
+        }
+
+        &_desc {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 30px 0 60px 0;
+            font-size: 20px;
+
+            @media (max-width: 600px) {
+                font-size: 16px;
+            }
+
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 243px;
+            height: 50px;
+            border-radius: 60px;
+            cursor: pointer;
+
+            @media (max-width: 600px) {
+                width: 250px;
+                height: 35px;
+            }
+
+        }
+    }
+
+
+    .headerShapes {
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        margin-top: 100px;
+
+        @media (max-width:600px) {
+            display: none;
+        }
+
+        .curved-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120%;
+            border-top: 1px solid rgba(220, 220, 220, .4);
+            height: 100%;
+
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            box-shadow: 0px 90px 20px rgba(220, 220, 220, .1) inset;
+            animation: anim1 ease-in-out 7s infinite;
+            transform: translateX(-5%);
+    
+           
+        }
+
+        .curved2 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 120%;
+            border-top: 1px solid rgba(220, 220, 220, .4);
+            z-index: 100;
+
+            height: 100%;
+
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            animation: anim3 ease-in-out 7s infinite;
+            background: linear-gradient(170deg, rgba(255, 255, 255, .3) 7%, rgba(0, 0, 0, 1) 61%);
+            transform: translateX(-5%);
+        }
+
+        .curved3 {
+            position: absolute;
+            top: 140px;
+            left: 0;
+            width: 120%;
+            border-top: 1px solid rgba(220, 220, 220, .4);
+            z-index: 10;
+
+            height: 100%;
+
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            animation: anim3 ease-in-out 7s infinite;
+            background: linear-gradient(135deg, rgba(255, 255, 255, .1) 7%, rgba(0, 0, 0, 1) 61%);
+            transform: translateX(-15%) rotate(7deg);
+        }
+
+        .block {
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, rgba(150, 149, 149, 1) 3%, rgba(17, 15, 15, 1) 60%);
+            display: none;
+        }
+
+    }
+
+}
+
+
+@keyframes anim1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 0;
+        
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 0;
+        
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 0;
+        
+    }
+}

@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: sfpro;
+    src: url("../public/SFPRODISPLAYREGULAR.OTF");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sfpro;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
